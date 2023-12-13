@@ -7,6 +7,8 @@
 
 所需依赖包和基本API可参考Chinese-CLIP：https://github.com/OFA-Sys/Chinese-CLIP
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 The pretrained models of &lt;Transmission Line Bolt Defects Classification Based on Multi-Modal Contrastive Learning>, and the code will be released later...
 
 pretrained models: https://pan.baidu.com/s/1SDJlxAwTpgXsJGAHJVYRGw?pwd=6382
