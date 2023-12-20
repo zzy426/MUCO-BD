@@ -11,6 +11,8 @@
 
 加载完整模型：
 
+import torch 
+
 import cn_clip.clip as clip
 
 from cn_clip.clip import load_from_name
@@ -44,6 +46,8 @@ the required packages and APIs (loading weights excepted) can refer to Chinese-C
 usage:
 
 load the full model:
+
+import torch 
 
 import cn_clip.clip as clip
 
