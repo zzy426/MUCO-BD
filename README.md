@@ -11,6 +11,10 @@
 
 加载完整模型：
 
+import cn_clip.clip as clip
+
+from cn_clip.clip import load_from_name
+
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 model, preprocess = load_from_name("ViT-B-16", device=device, download_root='./pretrained_weight/cn-clip') #加载原始CN-CLIP-vit
@@ -40,6 +44,10 @@ the required packages and APIs (loading weights excepted) can refer to Chinese-C
 usage:
 
 load the full model:
+
+import cn_clip.clip as clip
+
+from cn_clip.clip import load_from_name
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
