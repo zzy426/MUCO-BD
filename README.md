@@ -31,6 +31,8 @@ text_encoder=model.bert
 
 添加线性分类头构建图像分类模型（文本提示分类头后续开源）:
 
+import torch.nn as nn
+
 image_classifier = nn.Sequential(image_encoder,nn.Linear(in_features=512, out_features=num_classes, bias=True))
 
 
@@ -61,6 +63,8 @@ model, preprocess = load_from_name("ViT-B-16", device=device, download_root='./p
 model.load_state_dict(torch.load('./MUCO-BD-vit.pth')) #replace the weights with the pre-trained weights from above link
 
 extract the image/text encoder:
+
+import torch.nn as nn
 
 image_encoder=model.visual
 
