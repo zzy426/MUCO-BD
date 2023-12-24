@@ -64,12 +64,12 @@ model.load_state_dict(torch.load('./MUCO-BD-vit.pth')) #replace the weights with
 
 extract the image/text encoder:
 
-import torch.nn as nn
-
 image_encoder=model.visual
 
 text_encoder=model.bert
 
 add linear classification head to construct an image classifier (classification heads based on text prompt will be released later):
+
+import torch.nn as nn
 
 image_classifier = nn.Sequential(image_encoder,nn.Linear(in_features=512, out_features=num_classes, bias=True))
